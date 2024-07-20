@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto">
+
+</head>
+
+<body>
+
+    <div class="root">
+        <div class="score" id="score-id">
+            <div class="title">
+                <h3> Rock <br> Paper <br> Scissors </h3>
+            </div>
+            <div class="game-score">
+                <div class="com-score">
+                    <h5 class="comsco"> Computer<br>Score</h5>
+                    <h1> 0 </h1>
+                </div>
+                <div class="human-score">
+                    <h5 class="comsco"> Your Score</h5>
+                    <h1 class="score-val"> 0 </h1>
+                </div>
+
+            </div>
+        </div>
+        <div class="game" id="game-result-1">
+            <div class="lines">
+                <div class="lines-hor" id="line-1"></div>
+                <div class="lines-hor" id="line-2"></div>
+                <div class="lines-hor" id="line-3"></div>
+                <div class="fist">
+                    <img src="image/fist.png" id="fist-img" class="img">
+                </div>
+                <div class="scissor">
+                    <img src="image/scissor.png" id="scissor-img" class="img">
+                </div>
+                <div class="hand">
+                    <img src="image/hand.png" id="hand-img" class="img">
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+        <div class="game-container hidden" id="game-iframe">
+
+            <div class="result-container">
+                <h3 class="ypic">YOU PICKED</h3>
+                <div class="game-result" id="display"></div>
+            </div>
+            <div id="win" class="hidden">
+                <h1>YOU WIN</h1>
+                <h3>AGAINST PC</h3>
+                <button onclick="playAgain()">PLAY AGAIN</button>
+            </div>
+            <div id="lost" class="hidden">
+                <h1>YOU LOST</h1>
+                <h3>AGAINST PC</h3>
+                <button onclick="playAgain()">PLAY AGAIN</button>
+            </div>
+            <div id="tie" class="hidden">
+                <h1>TIE UP</h1>
+                <button onclick="playAgain()">REPLAY</button>
+            </div>
+
+            <div class="result-container">
+                <h3 class="ypic">PC PICKED</h3>
+                <div class="com-turn" id="com-result"></div>
+            </div>
+
+
+        </div>
+        <div class="celebration-container" id="celeb-cont">
+            <div class="center-container">
+                <div id="image-container">
+                    <img src="image/stars.png" class="stars">
+                    <img src="image/Vector.png" class="vector">
+                </div>
+                <div class="text-won">
+                    <h1>HURRAY!!</h1>
+                    <h3>YOU WON THE GAME</h3>
+                    <button onclick="playAgainFresh()">PLAY AGAIN</button>
+                </div>
+            </div>
+        </div>
+        <div class="rules-main">
+            <div id="rn-btn">
+                <div class="rules-btn" id="r-btn">
+                    <h2> RULES</h2>
+                </div>
+            </div>
+            <div class="rules">
+                <div class="rules-container">
+                    <h2>Game Rules</h2>
+                    <div class="des-rules">
+                        <ul>
+                            <li> <span>Rock beats scissors, scissors beat paper, and paper beats rock. </span></li>
+                            <li> <span>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot”
+                                    or
+                                    just “rock, paper, scissors.” </span></li>
+                            <li><span>Use rock, paper, scissors to settle minor decisions or simply play to pass the
+                                    time</span></li>
+                            <li><span>If both players lay down the same hand, each player lays down another
+                                    hand</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="close">
+                        <span>X</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
